@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshBite | Address</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📍 Delivery Address</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="track.html">Track</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Enter Your Delivery Details</h2>
+
+    <form id="addressForm" class="address-form" onsubmit="saveAddress(event)">
+      <label>Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label>Phone Number:</label>
+      <input type="tel" id="phone" placeholder="Enter phone number" required pattern="[0-9]{10}">
+
+      <label>Delivery Address:</label>
+      <textarea id="address" placeholder="Enter your full address" required></textarea>
+
+      <button type="submit">Confirm Order</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 FreshBite | Made with ❤️ for learning</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
